@@ -9,11 +9,22 @@ import {
 } from "framer-motion";
 import { cn } from "@/lib/utils";
 
+type SafeDivProps = Omit<
+  HTMLAttributes<HTMLDivElement>,
+  | "children"
+  | "className"
+  | "onDrag"
+  | "onDragStart"
+  | "onDragEnd"
+  | "onAnimationStart"
+  | "onAnimationEnd"
+>;
+
 type DraggableCardProps = {
   children: ReactNode;
   className?: string;
   index?: number;
-} & Omit<HTMLAttributes<HTMLDivElement>, "children" | "className">;
+} & SafeDivProps;
 
 export default function DraggableCard({
   children,

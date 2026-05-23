@@ -3,6 +3,7 @@
 import type {
   AnchorHTMLAttributes,
   ButtonHTMLAttributes,
+  CSSProperties,
   MouseEvent,
   ReactNode,
 } from "react";
@@ -11,26 +12,57 @@ import {
   useMotionValue,
   useSpring,
   useTransform,
+  type MotionStyle,
 } from "framer-motion";
+
+type ButtonType = "button" | "submit" | "reset";
+
+type SafeAnchorProps = Omit<
+  AnchorHTMLAttributes<HTMLAnchorElement>,
+  | "children"
+  | "className"
+  | "href"
+  | "style"
+  | "type"
+  | "onDrag"
+  | "onDragStart"
+  | "onDragEnd"
+  | "onAnimationStart"
+  | "onAnimationEnd"
+  | "onAnimationIteration"
+>;
+
+type SafeButtonProps = Omit<
+  ButtonHTMLAttributes<HTMLButtonElement>,
+  | "children"
+  | "className"
+  | "style"
+  | "type"
+  | "onDrag"
+  | "onDragStart"
+  | "onDragEnd"
+  | "onAnimationStart"
+  | "onAnimationEnd"
+  | "onAnimationIteration"
+>;
 
 type MagneticButtonBaseProps = {
   children: ReactNode;
   className?: string;
   cursorLabel?: string;
+  style?: CSSProperties;
 };
 
 type MagneticButtonAnchorProps = MagneticButtonBaseProps & {
   href: string;
   external?: boolean;
-} & Omit<
-    AnchorHTMLAttributes<HTMLAnchorElement>,
-    "href" | "className" | "children"
-  >;
+} & SafeAnchorProps;
 
 type MagneticButtonNativeProps = MagneticButtonBaseProps & {
-  href?: undefined;
+  href?: never;
   external?: never;
-} & Omit<ButtonHTMLAttributes<HTMLButtonElement>, "className" | "children">;
+  type?: ButtonType;
+} & SafeButtonProps;
 
 export type MagneticButtonProps =
   | MagneticButtonAnchorProps
@@ -64,13 +96,16 @@ export default function MagneticButton(props: MagneticButtonProps) {
     mouseY.set(0);
   };
 
-  if ("href" in props && props.href) {
+  if ("href" in props && typeof props.href === "string") {
     const {
       href,
       external = false,
       children,
       className = "",
       cursorLabel,
+      style,
+      target,
+      rel,
       ...anchorProps
     } = props;
 
@@ -80,18 +115,30 @@ export default function MagneticButton(props: MagneticButtonProps) {
       href.startsWith("mailto:") ||
       href.startsWith("tel:");
 
+    const motionStyle: MotionStyle = {
+      ...style,
+      x,
+      y,
+    };
+
     return (
       <motion.a
+        {...anchorProps}
         href={href}
-        style={{ x, y }}
+        style={motionStyle}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         whileTap={{ scale: 0.97 }}
         className={`magnetic-button ${className}`}
         data-cursor-label={cursorLabel}
-        target={isExternal && href.startsWith("http") ? "_blank" : undefined}
-        rel={isExternal && href.startsWith("http") ? "noreferrer" : undefined}
-        {...anchorProps}
+        target={
+          target ??
+          (isExternal && href.startsWith("http") ? "_blank" : undefined)
+        }
+        rel={
+          rel ??
+          (isExternal && href.startsWith("http") ? "noreferrer" : undefined)
+        }
       >
         {children}
       </motion.a>
@@ -102,20 +149,30 @@ export default function MagneticButton(props: MagneticButtonProps) {
     children,
     className = "",
     cursorLabel,
-    type = "button",
+    style,
+    type,
     ...buttonProps
   } = props;
 
+  const buttonType: ButtonType =
+    type === "submit" || type === "reset" ? type : "button";
+
+  const motionStyle: MotionStyle = {
+    ...style,
+    x,
+    y,
+  };
+
   return (
     <motion.button
-      type={type}
-      style={{ x, y }}
+      {...buttonProps}
+      type={buttonType}
+      style={motionStyle}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       whileTap={{ scale: 0.97 }}
       className={`magnetic-button ${className}`}
       data-cursor-label={cursorLabel}
-      {...buttonProps}
     >
       {children}
     </motion.button>
