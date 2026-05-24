@@ -23,7 +23,7 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://yourdomain.com"),
+  metadataBase: new URL("https://aldoridloportfolio.vercel.app/"),
   title: {
   default: "Aldo Ridlo — Creative Frontend Portfolio",
   template: "%s | Aldo Ridlo",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     title: "Aldo Ridlo — Creative Frontend Portfolio",
     description:
       "A personal creative portfolio exploring visual direction, interface design, motion, and digital experience.",
-    url: "https://yourdomain.com",
+    url: "https://aldoridloportfolio.vercel.app/",
     siteName: "Aldo Ridlo",
     images: [
       {

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ImageParallax from "@/components/motion/ImageParallax";
 import TransitionLink from "@/components/motion/TransitionLink";
+import TextReveal from "@/components/motion/TextReveal";
 import SectionLabel from "@/components/ui/SectionLabel";
 import { playgroundItems } from "@/lib/data";
 import { imageSizes } from "@/lib/imageSizes";
@@ -21,11 +22,12 @@ export default function PlaygroundPage() {
         <SectionLabel>Creative Playground</SectionLabel>
 
         <div className="playground-archive__intro">
-          <h1>Visual experiments, motion studies, and unfinished ideas.</h1>
+          <h1>
+            <TextReveal text="Experiments, interactive fragments, and visual thoughts." />
+          </h1>
 
           <p>
-            A space for exploring interface direction, interaction rhythm,
-            motion behavior, and visual systems outside formal case studies.
+            <TextReveal text="A dedicated space for raw exploration outside formal client frameworks. This is where user interface concepts, interaction flows, and visual systems are stress-tested, refined, and shaped before maturing into production-ready work." />  
           </p>
         </div>
       </section>

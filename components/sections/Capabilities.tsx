@@ -12,13 +12,13 @@ export default function Capabilities() {
           <SectionLabel>Capabilities</SectionLabel>
 
           <h2 className="capabilities__title">
-            What I can shape from idea to interface.
+            What I can shape from raw idea to polished interface.
           </h2>
 
           <p className="capabilities__intro">
-            My work sits between concept and execution. I explore visual
-            direction, build digital interfaces, and translate creative thinking
-            into web experiences that feel intentional, expressive, and usable.
+            Positioned at the intersection of aesthetic logic and technical execution, I map visual 
+            identities, design clean user interfaces, and refine digital experiences. My goal is to 
+            ensure every interaction is expressive, technically sound, and deeply memorable.
           </p>
 
           <p className="capabilities__hint">
@@ -34,14 +34,13 @@ export default function Capabilities() {
             </div>
 
             <h3>
-              Strategy, taste, interface, and motion — connected into one
-              digital experience.
+              Strategy, taste, interface, and interaction—connected into a singular digital experience.
             </h3>
 
             <p>
-              A strong portfolio is not built only from good visuals. It needs
-              clear hierarchy, strong copy, precise spacing, emotional rhythm,
-              and technical execution that supports the story.
+              A great portfolio is not built on strong visuals alone. It requires an intuitive layout 
+              hierarchy, clear messaging, precise grid spacing, an emotional rhythm, and flawless technical 
+              execution to back up the story.
             </p>
           </div>
 

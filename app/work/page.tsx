@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ImageParallax from "@/components/motion/ImageParallax";
 import TransitionLink from "@/components/motion/TransitionLink";
+import TextReveal from "@/components/motion/TextReveal";
 import SectionLabel from "@/components/ui/SectionLabel";
 import { works } from "@/lib/data";
 import { imageSizes } from "@/lib/imageSizes";
@@ -21,12 +22,12 @@ export default function WorkPage() {
         <SectionLabel>Selected Archive</SectionLabel>
 
         <div className="work-archive__intro">
-          <h1>Works shaped through concept, interface, and motion.</h1>
+          <h1>
+            <TextReveal text="Built from ideas, shaped into digital experiences." />
+          </h1>
 
           <p>
-            A collection of digital experiences, creative explorations, and
-            interface-driven projects crafted with attention to visual rhythm,
-            interaction, and execution.
+            <TextReveal text="A curated selection of works, studies, and creative explorations — not only showing the final result, but also the way each idea is translated into structure, visuals, and interaction." />
           </p>
         </div>
       </section>

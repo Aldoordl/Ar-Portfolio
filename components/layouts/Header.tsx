@@ -12,6 +12,7 @@ export default function Header() {
   const isActive = (href: string) => {
     if (href === "/about") return pathname === "/about";
     if (href === "/work") return pathname.startsWith("/work");
+    if (href === "/playground") return pathname.startsWith("/playground");
     return false;
   };
 

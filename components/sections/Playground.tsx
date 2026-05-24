@@ -14,13 +14,13 @@ export default function Playground() {
         <SectionLabel>Creative Playground</SectionLabel>
 
         <h2 className="playground__title">
-          Experiments, fragments, and visual thoughts in motion.
+          Experiments, interactive fragments, and visual thoughts.
         </h2>
 
         <p className="playground__intro">
-          A space for creative exploration outside formal case studies. This is
-          where interface ideas, motion studies, visual systems, and interaction
-          experiments are shaped before they become finished work.
+          A dedicated space for raw exploration outside formal client frameworks. This is 
+          where user interface concepts, interaction flows, and visual systems are stress-tested, 
+          refined, and shaped before maturing into production-ready work.
         </p>
       </div>
 

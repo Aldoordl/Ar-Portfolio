@@ -23,19 +23,17 @@ export default function Hero() {
         <div className="hero__left">
           <div className="hero__eyebrow">
             <span>Personal Portfolio</span>
-            <span>Creative Web Experience</span>
+            <span>UI/UX & Digital Experience</span>
           </div>
 
           <h1 className="hero__title">
             <span>Creative mind.</span>
             <span>Digital execution.</span>
-            <span>Visual playground.</span>
+            <span>Visual exploration.</span>
           </h1>
 
           <p className="hero__description">
-            I shape scattered ideas into expressive digital experiences —
-            combining concept, visual rhythm, interaction, and web technology
-            into a portfolio that feels alive.
+            {siteConfig.description}
           </p>
 
           <div className="hero__actions">

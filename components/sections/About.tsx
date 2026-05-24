@@ -1,32 +1,6 @@
 // components/sections/About.tsx
 import SectionLabel from "../ui/SectionLabel";
-
-const principles = [
-  {
-    number: "01",
-    title: "Concept before decoration",
-    text: "Setiap visual harus punya alasan. Bukan hanya terlihat keren, tetapi juga membangun arah, pesan, dan pengalaman.",
-  },
-  {
-    number: "02",
-    title: "Motion with intention",
-    text: "Animasi dipakai untuk memperkuat ritme, fokus, dan transisi — bukan sekadar efek tambahan.",
-  },
-  {
-    number: "03",
-    title: "Digital as playground",
-    text: "Website adalah ruang eksplorasi: tempat ide, visual, interaksi, dan teknologi bertemu dalam satu pengalaman.",
-  },
-];
-
-const capabilities = [
-  "Creative Direction",
-  "UI Design",
-  "Frontend Development",
-  "Visual System",
-  "Motion Concept",
-  "Brand Storytelling",
-];
+import { aboutCapabilities, aboutPrinciples } from "@/lib/data";
 
 export default function About() {
   return (
@@ -36,37 +10,33 @@ export default function About() {
           <SectionLabel>About / Manifesto</SectionLabel>
 
           <h2 className="about__title">
-            I do not just build pages. I build visual direction.
+            I do not just build layouts. I shape intuitive digital direction.
           </h2>
         </div>
 
         <div className="about__content">
           <p className="about__lead">
-            I am a creative thinker who enjoys transforming scattered ideas into
-            structured digital experiences. For me, a portfolio is not only a
-            place to show completed works, but also a living archive of taste,
-            process, experiments, and visual decisions.
+            I bridge the gap between creative strategy and digital development. I view this portfolio 
+            not as a static checklist of completed work, but as an evolving case study of design systems, 
+            user logic, and visual discipline.
           </p>
 
           <p className="about__body">
-            My creative process starts from curiosity: observing references,
-            collecting visual patterns, questioning why something feels good,
-            then translating that feeling into layout, typography, interaction,
-            and motion. I am interested in the space between concept and
-            execution — where raw ideas become something people can actually
-            see, use, and remember.
+            Everything begins with observation—analyzing visual rhythms, mapping user behaviors, and 
+            questioning the details that make an interface seamless. By combining creative direction with 
+            a structured technical foundation, I transform loose concepts into polished, reliable interfaces. 
+            I design for the intersection of aesthetic emotion and functional reality.
           </p>
 
           <div className="about__quote">
             <span>Creative statement</span>
             <p>
-              “I believe strong ideas deserve strong execution — precise,
-              expressive, and emotionally memorable.”
+              “Design brings the visual direction, while structured execution makes the experience looks like real.”
             </p>
           </div>
 
           <div className="about__principles">
-            {principles.map((item) => (
+            {aboutPrinciples.map((item) => (
               <article className="about__principle" key={item.number}>
                 <span>{item.number}</span>
                 <div>
@@ -78,7 +48,7 @@ export default function About() {
           </div>
 
           <div className="about__capabilities">
-            {capabilities.map((item) => (
+            {aboutCapabilities.map((item) => (
               <span key={item}>{item}</span>
             ))}
           </div>

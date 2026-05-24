@@ -73,11 +73,6 @@ export default function Footer() {
                 </a>
               ))}
             </div>
-
-            <div>
-              <span>Contact</span>
-              <a href={`mailto:${siteConfig.email}`} className="site-footer__cta" data-cursor-label="Email">{siteConfig.email}</a>
-            </div>
           </div>
         </div>
 

@@ -2,11 +2,11 @@
 
 export const siteConfig = {
   name: "Aldo Ridlo",
-  url: "https://yourdomain.com",
-  email: "yourmail@email.com",
-  role: "Creative Frontend Developer",
+  url: "https://aldoridloportfolio.vercel.app/",
+  email: "aldooridlo@gmail.com",
+  role: "UI/UX Designer & Creative Strategist",
   description:
-    "A personal creative portfolio exploring visual direction, interface design, motion, and digital experience.",
+    "Hello! I am a passionate UI/UX designer and creative strategist dedicated to crafting intuitive, engaging, and highly functional digital solutions.",
   keywords: [
     "creative frontend developer",
     "personal portfolio",
@@ -18,19 +18,19 @@ export const siteConfig = {
   socials: [
     {
       name: "Instagram",
-      href: "https://instagram.com/",
+      href: "https://instagram.com/aldoordl",
     },
     {
       name: "LinkedIn",
-      href: "https://linkedin.com/",
+      href: "https://linkedin.com/in/aldoordl",
     },
     {
-      name: "Behance",
-      href: "https://behance.net/",
+      name: "Dribbble",
+      href: "https://dribbble.com/aldoordl",
     },
     {
       name: "GitHub",
-      href: "https://github.com/",
+      href: "https://github.com/aldoordl",
     },
   ],
 };
@@ -46,7 +46,7 @@ export const navigationLinks = [
   },
   {
     label: "Playground",
-    href: "/#playground",
+    href: "/playground",
   },
   {
     label: "Contact",
@@ -55,11 +55,11 @@ export const navigationLinks = [
 ];
 
 export const heroSkills = [
-  "Creative Direction",
-  "UI Exploration",
-  "Web Experience",
-  "Motion Thinking",
-  "Digital Storytelling",
+  "User Interface Design",
+  "Creative Strategy",
+  "Quality Assurance",
+  "Software Engineering",
+  "Digital Experience",
 ];
 
 export const heroPieces = [
@@ -68,58 +68,59 @@ export const heroPieces = [
     number: "01",
     label: "Concept",
     title: "Ideas need direction.",
-    text: "I collect raw ideas, references, and visual feelings — then turn them into a clear creative direction.",
+    text: "Exploring fresh ideas to design intuitive interfaces and develop impactful digital systems.", 
   },
   {
-    id: "motion",
+    id: "ux-thinking",
     number: "02",
-    label: "Motion",
-    title: "Movement creates rhythm.",
-    text: "Small interactions, soft transitions, and scroll-based motion make the interface feel alive.",
+    label: "UX Thinking",
+    title: "User-centered design.",
+    text: "Focusing heavily on user needs to deliver seamless, seamless, and highly effective digital experiences.",
   },
   {
     id: "interface",
     number: "03",
     label: "Interface",
     title: "Layout should breathe.",
-    text: "A good interface is not only beautiful. It needs hierarchy, spacing, clarity, and emotion.",
+    text: "Crafting beautiful UI layouts that strike the perfect balance between visual emotion and functional clarity.", 
   },
   {
     id: "execution",
     number: "04",
     label: "Execution",
     title: "Ideas become real.",
-    text: "Creative concepts are translated into working digital experiences through frontend execution.",
+    text: "Translating creative visions into fully operational web and software products through structured development.", 
   },
 ];
 
 export const aboutPrinciples = [
   {
     number: "01",
-    title: "Concept before decoration",
-    text: "Every visual decision needs a reason. Design should not only look beautiful, but also carry direction, message, and experience.",
+    title: "User-focused & effective",
+    text: "Every interface choice must serve the user, ensuring the final digital platform behaves smoothly and intuitively.", 
   },
   {
     number: "02",
-    title: "Motion with intention",
-    text: "Motion is used to guide attention, create rhythm, and make transitions feel natural — not just to add visual effects.",
+    title: "Continuous visual growth",
+    text: "Every unique project is treated as an open window to learn, test new design systems, and push creative boundaries.", 
   },
   {
     number: "03",
-    title: "Digital as playground",
-    text: "A website can become a living space where ideas, visual systems, interaction, and technology meet.",
+    title: "Cross-functional collaboration",
+    text: "Bringing vision to life requires working closely with cross-functional teams to align strategy with seamless execution.", 
   },
 ];
 
 export const aboutCapabilities = [
-  "Creative Direction",
-  "UI Design",
-  "Frontend Development",
-  "Visual System",
-  "Motion Concept",
-  "Brand Storytelling",
+  "User Interface Design", 
+  "User Experience Design", 
+  "Quality Assurance & Control", 
+  "Creative Direction", 
+  "Software Engineering", 
+  "Digital Marketing", 
 ];
 
+// not ready
 export const works = [
   {
     number: "01",
@@ -223,6 +224,7 @@ export const works = [
   },
 ];
 
+// not ready (idk, where)
 export const caseStudies = [
   {
     slug: "personal-portfolio-experience",
@@ -306,6 +308,7 @@ export const caseStudies = [
   },
 ];
 
+// not ready
 export const playgroundItems = [
   {
     number: "001",
@@ -345,77 +348,77 @@ export const playgroundItems = [
 export const capabilities = [
   {
     number: "01",
-    title: "Creative Direction",
+    title: "User Interface (UI) Design", 
     description:
-      "Shaping visual direction, mood, message, and experience so an idea has a clear creative character.",
-    points: ["Visual concept", "Mood direction", "Reference mapping"],
+      "Shaping crisp layout frameworks, comfortable typography ratios, and structured UI components that map directly to high-fidelity software parameters.", 
+    points: ["Layout Systems", "Visual Hierarchy", "Component Consistency"],
   },
   {
     number: "02",
-    title: "UI & Web Experience",
+    title: "User Experience (UX) Strategy", 
     description:
-      "Designing websites with strong visual hierarchy, clear structure, comfortable flow, and modern digital rhythm.",
-    points: ["Landing page", "Portfolio website", "Interface design"],
+      "Evaluating digital systems from the user's viewpoint to design seamless micro-interactions, reducing functional friction points entirely.", 
+    points: ["User-Centered Flow", "Interaction Logic", "Friction Removal"],
   },
   {
     number: "03",
-    title: "Frontend Development",
+    title: "Quality Assurance & Control", 
     description:
-      "Turning interface ideas into responsive, interactive, component-based websites using modern frontend tools.",
-    points: ["Next.js", "TypeScript", "Responsive layout"],
+      "Enforcing rigid product review sweeps to protect interface layouts, check functional loops, and guarantee bug-free deployment cycles.", 
+    points: ["Product Sanity Checks", "Interface Validation", "System Testing"],
   },
   {
     number: "04",
-    title: "Motion & Interaction",
+    title: "Creative Direction & Strategy", 
     description:
-      "Creating microinteractions, transitions, and scroll-based motion that make digital experiences feel more alive.",
-    points: ["Scroll motion", "Microinteraction", "GSAP-ready"],
+      "Bridging the execution gap by steering creative identity assets from abstract visual briefs into memorable, fully realized system designs.", 
+    points: ["Art Direction", "Concept Framing", "Creative Strategy Mapping"],
   },
 ];
 
 export const aboutPage = {
-  headline:
-    "A creative mind learning to turn scattered ideas into digital experiences.",
+headline:
+    "A Creative Mind Designing Intuitve User Interfaces and Structured Digital Solutions.", 
   intro:
-    "I am drawn to the space between idea and execution — where visual curiosity, interaction, storytelling, and frontend development meet.",
+    "I am a student at UNU Yogyakarta with a solid baseline in Software Engineering, dedicating my career focus to user interface dynamics and creative systems.", 
   story:
-    "Most of my process starts from scattered references, unfinished thoughts, and small visual observations. I like exploring why something feels right, why a layout feels alive, and how a digital experience can carry emotion without losing clarity. For me, design and code are not separate things. Design gives the idea a direction, while code makes the idea real.",
-  profileImage: "/images/profile/profile.jpg",
+    "My technical journey kicked off in Software Engineering at SMKN 1 Purwosari, which anchored my passion for clean code systems, HTML, and CSS. This background pushed me straight into the user experience realm. I realized apps shouldn't just run perfectly on servers, they need to feel completely natural, clean, and engaging to the human end-user.", 
+  profileImage: "/images/profile/IMG_0143.PNG",
   cvUrl: "/cv/cv.pdf",
 
   philosophy: [
     {
-      title: "Clarity before complexity",
-      text: "A strong experience does not need to be crowded. It needs clear hierarchy, strong rhythm, and a reason behind every visual choice.",
+      title: "Active Iterative Learning",
+      text: "Every product build serves as a unique learning landscape to test fresh interface frameworks and sharpen my craft.", 
     },
     {
-      title: "Ideas need execution",
-      text: "Having many ideas is not enough. The challenge is turning those ideas into something structured, usable, and memorable.",
+      title: "Form Meets Absolute Function",
+      text: "An interface shines when visual elegance aligns smoothly with user utility, keeping flows intuitive and completely clear.", 
     },
     {
-      title: "Motion should guide",
-      text: "Motion is not decoration. It should guide attention, create flow, and make the interface feel more natural.",
+      title: "Open Professional Alignment",
+      text: "Real visual impact blooms through crisp team communication, cross-discipline collaboration, and an adaptive layout workflow.", 
     },
   ],
 
-  timeline: [
+timeline: [
     {
-      year: "2024",
-      title: "Started exploring visual direction",
+      year: "2022 - 2025",
+      title: "Software Engineering Roots",
       description:
-        "Focused on understanding layout, typography, visual references, and how digital visuals communicate emotion.",
+        "Mastered core programming structures, modular coding patterns, HTML, and CSS layouts at SMKN 1 Purwosari.",
     },
     {
-      year: "2025",
-      title: "Built creative and digital projects",
+      year: "2024 - 2025",
+      title: "Studio & Agency Immersion",
       description:
-        "Started connecting design ideas with real digital output through websites, campaign visuals, and interface experiments.",
+        "Balanced dual-track responsibilities acting as Creative Director & QA/QC for Varcretife Studio alongside UI Design tasks at 10AM Studio.", 
     },
     {
-      year: "2026",
-      title: "Focused on creative frontend experience",
+      year: "2025 - Present",
+      title: "Academic Growth & Certifications",
       description:
-        "Exploring Next.js, interaction design, motion, and Awwwards-style digital experiences as a personal creative direction.",
+        "Pursuing higher education at Universitas Nahdlatul Ulama Yogyakarta while expanding my skill set via certified BNSP tracks and digital bootcamps.", 
     },
   ],
 
@@ -429,8 +432,8 @@ export const aboutPage = {
       items: ["Next.js", "TypeScript", "CSS", "Responsive Design"],
     },
     {
-      group: "Motion",
-      items: ["Framer Motion", "GSAP", "Microinteraction", "Scroll Motion"],
+      group: "Strategy & Quality",
+      items: ["Quality Assurance", "Creative Strategy", "Digital Marketing"],
     },
     {
       group: "Creative",
@@ -439,10 +442,10 @@ export const aboutPage = {
   ],
 
   currentlyExploring: [
-    "Interactive web experience",
     "Motion-driven portfolio",
-    "Creative coding",
-    "Editorial web layout",
-    "AI-assisted creative workflow",
+    "Interactive UI Component Prototyping",
+    "Advanced User Experience Architecture",
+    "Creative Frontend Framework Integrations",
+    "Optimized Product Quality Management Systems",
   ],
 };

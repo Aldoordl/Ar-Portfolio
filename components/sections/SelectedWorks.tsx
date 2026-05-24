@@ -1,6 +1,7 @@
 import ImageParallax from "@/components/motion/ImageParallax";
 import TransitionLink from "@/components/motion/TransitionLink";
 import SectionLabel from "../ui/SectionLabel";
+import Button from "../ui/Button";
 import { works } from "@/lib/data";
 import { imageSizes } from "@/lib/imageSizes";
 
@@ -21,10 +22,9 @@ export default function SelectedWorks() {
             translated into structure, visuals, and interaction.
           </p>
 
-          <TransitionLink href="/work" className="works__archiveLink">
-            View all works
-            <span>↗</span>
-          </TransitionLink>
+          <Button href="/work" variant="glass" cursorLabel="Explore">
+            View all works <span>↗</span>
+          </Button>
         </div>
       </div>
 
